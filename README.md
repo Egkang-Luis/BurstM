@@ -1,5 +1,11 @@
 # BurstM
 
+## Requirement
+### Python packages
+```
+conda env create --file environment.yaml
+conda activate BurstM
+```
 
 ## Track 1 SyntheticBurst dataset
 ### Training
