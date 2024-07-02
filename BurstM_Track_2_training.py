@@ -1,10 +1,5 @@
 import os
 import argparse
-from setproctitle import *
-
-pjt = 'Reproduce_with_CUDA12.1_seconed'
-setproctitle(pjt)
-
 ######################################## Pytorch lightning ########################################################
 
 import torch
@@ -39,10 +34,10 @@ def torch_seed(random_seed=13):
 parser = argparse.ArgumentParser(description='BurstSR using BurstM')
 
 parser.add_argument('--log_dir', default="./Results/BurstSR/tensorboard", type=str, help='Directory of logs(Tensorboard)')
-parser.add_argument('--image_dir', default="/data/eunggukang/dataset/BurstSR", type=str, help='Directory of inputs')
+parser.add_argument('--image_dir', default="./BurstSR", type=str, help='Directory of inputs')
 parser.add_argument('--model_dir', default="./Results/BurstSR/saved_model", type=str, help='Directory of model')
 parser.add_argument('--result_dir', default="./Results/BurstSR/result", type=str, help='Directory of results')
-parser.add_argument('--pre_trained', default="/data/eunggukang/test_data/BurstM/logs/Reproduce_with_CUDA12.1_saved_model/epoch=294-val_psnr=42.84.ckpt", type=str, help='Pre-trained model')
+parser.add_argument('--pre_trained', default="./pretrained/epoch=294-val_psnr=42.84.ckpt", type=str, help='Pre-trained model')
 parser.add_argument('--burst_size', default="14", type=int, help='Number of Burst short')
 args = parser.parse_args()
 

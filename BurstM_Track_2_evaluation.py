@@ -28,10 +28,10 @@ import time
 parser = argparse.ArgumentParser(description='Real burst super-resolution using BurstM')
 
 parser.add_argument('--scale', default='4', type=str, help='Sacle of SR')
-parser.add_argument('--input_dir', default='/data/eunggukang/dataset/BurstSR/', type=str, help='Directory for inputs')
+parser.add_argument('--input_dir', default='./BurstSR/', type=str, help='Directory for inputs')
 parser.add_argument('--result_dir', default='./Results/Real/', type=str, help='Directory for results')
 parser.add_argument('--result_gt_dir', default='./Results/Real_gt/', type=str, help='Directory for results')
-parser.add_argument('--weights', default='/data/eunggukang/test_data/BurstA2/logs/Track_1_BurstM_Re2_4saved_model/epoch=16-val_psnr=49.12.ckpt', type=str, help='Path to pre-trained weights')
+parser.add_argument('--weights', default='./pretrained/epoch=16-val_psnr=49.12.ckpt', type=str, help='Path to pre-trained weights')
 
 args = parser.parse_args()
 

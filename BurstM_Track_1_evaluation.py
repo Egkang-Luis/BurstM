@@ -36,10 +36,10 @@ def torch_seed(random_seed=13):
 parser = argparse.ArgumentParser(description='Synthetic burst super-resolution using BurstM')
 
 parser.add_argument('--scale', default='3', type=str, help='Sacle of SR')
-parser.add_argument('--input_dir', default='/data/eunggukang/dataset/Zurich-RAW-to-DSLR-Dataset', type=str, help='Directory of inputs')
+parser.add_argument('--input_dir', default='./Zurich-RAW-to-DSLR-Dataset', type=str, help='Directory of inputs')
 parser.add_argument('--result_dir', default='./Results/Synthetic/', type=str, help='Directory for results')
 parser.add_argument('--result_gt_dir', default='./Results/Synthetic_gt/', type=str, help='Directory for results')
-parser.add_argument('--weights', default='/data/eunggukang/test_data/BurstM/logs/Track_1_BurstM_saved_model/epoch=294-val_psnr=42.83.ckpt', type=str, help='Path to weights')
+parser.add_argument('--weights', default='./pretrained/epoch=294-val_psnr=42.83.ckpt', type=str, help='Path to weights')
 
 args = parser.parse_args()
 
