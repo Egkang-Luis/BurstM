@@ -2,6 +2,8 @@
 
 [EungGu Kang](eunggukang@gmail.com), [Byeonghun Lee](byeonghun_lee@korea.ac.kr), [Sunghoon Im](sunghoonim@dgist.ac.kr), [Kyong Hwan Jin](kyong_jin@korea.ac.kr)
 
+This repository contains the official implementation for BurstM introduced in the following paper:
+
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2304.01194.pdf)
 
 #### News
