@@ -21,10 +21,10 @@ This repository contains the official implementation for BurstM introduced in th
 ## Quantitative comparison
 ![BurstM_quantitative_comparison.png](figs/BurstM_quantitative_comparison.png)
 
-## x4 inference result for BurstSR
+## x4 inference result for BurstSR dataset(Real-world dataset)
 ![BurstM_BurstSR_x4_result.png](figs/BurstM_BurstSR_x4_result.png)
 
-## Multi-scale inference result for BurstSR
+## Multi-scale inference result for BurstSR dataset(Real-world dataset)
 ![BurstM_BurstSR_multiscale.png](figs/BurstM_BurstSR_multiscale.png)
 
 ## Dependencies
