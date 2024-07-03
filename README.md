@@ -9,12 +9,17 @@
 
 <hr />
 
-> **Abstract:** *Multiframesuper-resolution(MFSR)achieveshigherperfor- mance than single image super-resolution (SISR), because MFSR lever- ages abundant information from multiple frames. Recent MFSR ap- proaches adapt the deformable convolution network (DCN) to align the frames. However, the existing MFSR suffers from misalignments between the reference and source frames due to the limitations of DCN, such as small receptive fields and the predefined number of kernels. From these problems, existing MFSR approaches struggle to represent high- frequency information. To this end, we propose Deep Burst Multi-scale SR using Fourier Space with Optical Flow (BurstM). The proposed method estimates the optical flow offset for accurate alignment and pre- dicts the continuous Fourier coefficient of each frame for representing high-frequency textures. In addition, we have enhanced the network’s flexibility by supporting various super-resolution (SR) scale factors with the unimodel. We demonstrate that our method has the highest perfor- mance and flexibility than the existing MFSR methods.*
+> *Multiframesuper-resolution(MFSR)achieveshigherperfor- mance than single image super-resolution (SISR), because MFSR lever- ages abundant information from multiple frames. Recent MFSR ap- proaches adapt the deformable convolution network (DCN) to align the frames. However, the existing MFSR suffers from misalignments between the reference and source frames due to the limitations of DCN, such as small receptive fields and the predefined number of kernels. From these problems, existing MFSR approaches struggle to represent high- frequency information. To this end, we propose Deep Burst Multi-scale SR using Fourier Space with Optical Flow (BurstM). The proposed method estimates the optical flow offset for accurate alignment and pre- dicts the continuous Fourier coefficient of each frame for representing high-frequency textures. In addition, we have enhanced the network’s flexibility by supporting various super-resolution (SR) scale factors with the unimodel. We demonstrate that our method has the highest perfor- mance and flexibility than the existing MFSR methods.*
 <hr />
+
+## Comparison with previous models
+![overview.png](figs/BurstM_overall_architecture.png)
+
+
 
 ## Installation
 
-Our code is based on Ubuntu 20.04, pytorch 1.10.0, CUDA 11.3 (NVIDIA RTX 3090 24GB, sm86) and python 3.6.
+Our code is based on Ubuntu 22.04, pytorch 2.3.0, CUDA 12.4 (NVIDIA RTX 3090 24GB, sm86) and python 3.10.14.
 
 We recommend using [conda](https://www.anaconda.com/distribution/) for installation:
 ```
