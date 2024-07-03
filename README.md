@@ -22,9 +22,13 @@ conda env create --file environment.yaml
 conda activate BurstM
 ```
 
-## Track 1 SyntheticBurst dataset
-### Training
+## SyntheticBurst
+### 1. Download dataset and pre-trained models.
+
 - Download [Zurich RAW to RGB dataset](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset).
+- Download [Pre-trained model for SyntheticBurst dataset](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset).
+
+### 2. Download dataset and pre-trained models.
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --image_dir=<Input DIR>
 ```
