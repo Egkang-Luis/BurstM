@@ -72,7 +72,9 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --image_dir=<Input D
 2. Test
 
   If you want to change the super-resolution scale, please change --scale.
+  
   Not only intager scales, but also floating scales are possible.
+  
   But the qualities of floating sclae such as x2.5 and x3.5 are not guaranteed.
 ```
 # Please modify the path of iamge directory for inputs and pre-trained models(weights).
@@ -86,7 +88,9 @@ CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DI
 2. Test
 
   If you want to change the super-resolution scale, please change --scale.
+  
   Not only intager scales, but also floating scales are possible.
+  
   But the qualities of floating sclae such as x2.5 and x3.5 are not guaranteed.
 ```
 # Please modify the path of iamge directory for inputs and pre-trained models(weights).
