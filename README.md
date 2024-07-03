@@ -45,9 +45,7 @@ conda activate BurstM
 ## Training
 
 ### SyntheticBurst
-1. Download dataset(Zurich RAW to RGB dataset)
-
-- Download [Zurich RAW to RGB dataset](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset).
+1. Download dataset(Zurich RAW to RGB dataset) [Download](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset).
 
 2. Train
 
@@ -57,9 +55,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --image_dir=<Input D
 ```
 
 ### BurstSR(Real-world data)
-1. Download dataset(BurstSR for real-world datasets)
-
-- Download [burstsr_dataset](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip)
+1. Download dataset(BurstSR for real-world datasets) [Download](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip)
 
 2. Train
 
@@ -71,9 +67,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --image_dir=<Input D
 ## Test
 
 ### SyntheticBurst
-1. Download pre-trained models of SyntheticBurst
-
-- Download [Pre-trained model of SyntheticBurst](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset).
+1. Download pre-trained models of SyntheticBurst [Download](https://drive.google.com/file/d/1ToKrtGUhUHm8yHnZvgVuUmVwXlN064as/view?usp=sharing).
 
 2. Test
 
@@ -85,9 +79,7 @@ CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DI
 ```
 
 ### BurstSR(Real-world data)
-1. Download pre-trained models of BurstSR
-
-- Download [Pre-trained model of BurstSR](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip)
+1. Download pre-trained models of BurstSR [Download](https://drive.google.com/file/d/1id83q_IOF7qawO5_4WJ4ZGOFvxkcwbFw/view?usp=sharing)
 
 2. Test
 
@@ -97,3 +89,14 @@ CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DI
 # Not only intager scales, but also floating scales are possible. But the qualities of floating sclae such as x2.5 and x3.5 are not guaranteed.
 CUDA_VISIBLE_DEVICES=0 python BurstM_Track_2_evaluation.py --image_dir=<Input DIR> --scale=4, --weights=<Pretrained model of BurstSR>
 ``` 
+
+## Citations
+If our code helps your research or work, please consider citing our paper.
+The following is a BibTeX reference.
+
+```
+Will be updated
+```
+
+## Contact
+email: [eunggukang@gmail.com]
