@@ -35,7 +35,7 @@ def torch_seed(random_seed=13):
 
 parser = argparse.ArgumentParser(description='Synthetic burst super-resolution using BurstM')
 
-parser.add_argument('--scale', default='3', type=str, help='Sacle of SR')
+parser.add_argument('--scale', default='4', type=str, help='Sacle of SR')
 parser.add_argument('--input_dir', default='./Zurich-RAW-to-DSLR-Dataset', type=str, help='Directory of inputs')
 parser.add_argument('--result_dir', default='./Results/Synthetic/', type=str, help='Directory for results')
 parser.add_argument('--result_gt_dir', default='./Results/Synthetic_gt/', type=str, help='Directory for results')

@@ -17,15 +17,23 @@
 
 
 ## Comparison with previous models
-![BurstM_quantitative_comparison.png](figs/BurstM_quantitative_comparison.png.png)
+### Quantitative comparison
+![BurstM_quantitative_comparison.png](figs/BurstM_quantitative_comparison.png)
+
+### x4 inference result for BurstSR
 ![BurstM_BurstSR_x4_result.png](figs/BurstM_BurstSR_x4_result.png)
+
+### Multi-scale inference result for BurstSR
 ![BurstM_BurstSR_multiscale.png](figs/BurstM_BurstSR_multiscale.png)
 
 
 
-## Installation
-
-Our code is based on Ubuntu 22.04, pytorch 2.3.0, CUDA 12.4 (NVIDIA RTX 3090 24GB, sm86) and python 3.10.14.
+## Dependencies
+- OS: Ubuntu 22.04
+- nvidia cuda: 12.4
+- Python: 3.10.14
+- pytorch: 2.3.0
+We used NVIDIA RTX 3090 24GB, sm86
 
 We recommend using [conda](https://www.anaconda.com/distribution/) for installation:
 ```
@@ -33,18 +41,50 @@ conda env create --file environment.yaml
 conda activate BurstM
 ```
 
-## SyntheticBurst
-### 1. Download dataset and pre-trained models.
+## Training
+
+### SyntheticBurst
+1. Download dataset(Zurich RAW to RGB dataset)
 
 - Download [Zurich RAW to RGB dataset](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset).
-- Download [Pre-trained model for SyntheticBurst dataset](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset).
 
-### 2. Download dataset and pre-trained models.
+2. Train
+
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --image_dir=<Input DIR>
 ```
 
-### Evaluation
+### BurstSR(Real-world data)
+1. Download dataset(BurstSR for real-world datasets)
+
+- Download [burstsr_dataset](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip) and extract it in root directory.
+
+2. Train
+
 ```
-python BurstM_Track_1_evaluation.py
+CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --image_dir=<Input DIR> --pre_trained=<Pretrained model of SyntheticBurst>
+```
+
+## Test
+
+### SyntheticBurst
+1. Download pre-trained models of SyntheticBurst
+
+- Download [Pre-trained model of SyntheticBurst](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset).
+
+2. Test
+
+```
+CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DIR> --scale=4, --weights=<Pretrained model of SyntheticBurst>
+```
+
+### BurstSR(Real-world data)
+1. Download pre-trained models of BurstSR
+
+- Download [Pre-trained model of BurstSR](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip) and extract it in root directory.
+
+2. Test
+
+```
+CUDA_VISIBLE_DEVICES=0 python BurstM_Track_2_evaluation.py --image_dir=<Input DIR> --scale=4, --weights=<Pretrained model of BurstSR>
 ```
