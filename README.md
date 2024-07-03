@@ -1,6 +1,6 @@
 # BurstM: Deep Burst Multi-scale SR using Fourier Space with Optical Flow (ECCV 2024)
 
-[EungGu Kang](https://github.com/Egkang-Luis/BurstM), [Byeonghun Lee](byeonghun_lee@korea.ac.kr), [Sunghoon Im](sunghoonim@dgist.ac.kr), [Kyong Hwan Jin](https://ipa.korea.ac.kr)
+[EungGu Kang](https://github.com/Egkang-Luis/BurstM), [Byeonghun Lee](https://github.com/ByeonghunLee12), [Sunghoon Im](https://sunghoonim.github.io/), [Kyong Hwan Jin](https://ipa.korea.ac.kr)
 
 This repository contains the official implementation for BurstM introduced in the following paper:
 
