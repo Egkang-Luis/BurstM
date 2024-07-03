@@ -33,6 +33,7 @@
 - nvidia cuda: 12.4
 - Python: 3.10.14
 - pytorch: 2.3.0
+
 We used NVIDIA RTX 3090 24GB, sm86
 
 We recommend using [conda](https://www.anaconda.com/distribution/) for installation:
@@ -87,4 +88,4 @@ CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DI
 
 ```
 CUDA_VISIBLE_DEVICES=0 python BurstM_Track_2_evaluation.py --image_dir=<Input DIR> --scale=4, --weights=<Pretrained model of BurstSR>
-```
+``` 
