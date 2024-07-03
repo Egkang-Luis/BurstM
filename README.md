@@ -57,7 +57,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --image_dir=<Input D
 ### BurstSR(Real-world data)
 1. Download dataset(BurstSR for real-world datasets)
 
-- Download [burstsr_dataset](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip) and extract it in root directory.
+- Download [burstsr_dataset](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip)
 
 2. Train
 
@@ -81,7 +81,7 @@ CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DI
 ### BurstSR(Real-world data)
 1. Download pre-trained models of BurstSR
 
-- Download [Pre-trained model of BurstSR](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip) and extract it in root directory.
+- Download [Pre-trained model of BurstSR](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip)
 
 2. Test
 
