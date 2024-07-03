@@ -100,5 +100,5 @@ Will be updated
 ```
 
 ## Acknowledgement
-This work is mainly based on [NIS](https://github.com/minshu-kim/Neural-Image-Stitching), we thank the authors for the contribution.
+This work is mainly based on [NIS](https://github.com/minshu-kim/Neural-Image-Stitching) and [Burstormer](https://github.com/akshaydudhane16/Burstormer), we thank the authors for the contribution.
 
