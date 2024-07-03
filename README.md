@@ -1,6 +1,6 @@
 # BurstM: Deep Burst Multi-scale SR using Fourier Space with Optical Flow (ECCV 2024)
 
-[EungGu Kang], [Byeonghun Lee], [Sunghoon Im], [Kyong Hwan Jin]
+[EungGu Kang](eunggukang@gmail.com), [Byeonghun Lee](byeonghun_lee@korea.ac.kr), [Sunghoon Im](sunghoonim@dgist.ac.kr), [Kyong Hwan Jin](kyong_jin@korea.ac.kr)
 
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2304.01194.pdf)
 
@@ -9,24 +9,21 @@
 
 <hr />
 
-> *Multiframesuper-resolution(MFSR)achieveshigherperfor- mance than single image super-resolution (SISR), because MFSR lever- ages abundant information from multiple frames. Recent MFSR ap- proaches adapt the deformable convolution network (DCN) to align the frames. However, the existing MFSR suffers from misalignments between the reference and source frames due to the limitations of DCN, such as small receptive fields and the predefined number of kernels. From these problems, existing MFSR approaches struggle to represent high- frequency information. To this end, we propose Deep Burst Multi-scale SR using Fourier Space with Optical Flow (BurstM). The proposed method estimates the optical flow offset for accurate alignment and pre- dicts the continuous Fourier coefficient of each frame for representing high-frequency textures. In addition, we have enhanced the network’s flexibility by supporting various super-resolution (SR) scale factors with the unimodel. We demonstrate that our method has the highest perfor- mance and flexibility than the existing MFSR methods.*
+> *Multiframesuper-resolution(MFSR)achieveshigherperfor- mance than single image super-resolution (SISR), because MFSR leverages abundant information from multiple frames. Recent MFSR approaches adapt the deformable convolution network (DCN) to align the frames. However, the existing MFSR suffers from misalignments between the reference and source frames due to the limitations of DCN, such as small receptive fields and the predefined number of kernels. From these problems, existing MFSR approaches struggle to represent high-frequency information. To this end, we propose Deep Burst Multi-scale SR using Fourier Space with Optical Flow (BurstM). The proposed method estimates the optical flow offset for accurate alignment and predicts the continuous Fourier coefficient of each frame for representing high-frequency textures. In addition, we have enhanced the network’s flexibility by supporting various super-resolution (SR) scale factors with the unimodel. We demonstrate that our method has the highest performance and flexibility than the existing MFSR methods.*
 <hr />
 
 ## Overall architectures for BurstM
 ![BurstM_overall_architecture.png](figs/BurstM_overall_architecture.png)
 
 
-## Comparison with previous models
-### Quantitative comparison
+## Quantitative comparison
 ![BurstM_quantitative_comparison.png](figs/BurstM_quantitative_comparison.png)
 
-### x4 inference result for BurstSR
+## x4 inference result for BurstSR
 ![BurstM_BurstSR_x4_result.png](figs/BurstM_BurstSR_x4_result.png)
 
-### Multi-scale inference result for BurstSR
+## Multi-scale inference result for BurstSR
 ![BurstM_BurstSR_multiscale.png](figs/BurstM_BurstSR_multiscale.png)
-
-
 
 ## Dependencies
 - OS: Ubuntu 22.04
@@ -55,7 +52,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --image_dir=<Input D
 ```
 
 ### BurstSR(Real-world data)
-1. Download dataset(BurstSR for real-world datasets) [Download](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip)
+1. Download dataset(BurstSR for real-world datasets) [Download](https://github.com/goutamgmb/NTIRE21_BURSTSR/blob/master/burstsr_links.md)
 
 2. Train
 
@@ -101,5 +98,6 @@ The following is a BibTeX reference.
 Will be updated
 ```
 
-## Contact
-email: [eunggukang@gmail.com]
+## Acknowledgement
+This work is mainly based on [NIS](https://github.com/minshu-kim/Neural-Image-Stitching), we thank the authors for the contribution.
+
