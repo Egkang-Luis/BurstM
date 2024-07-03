@@ -49,7 +49,7 @@ conda activate BurstM
 
 2. Train
 
-```
+```python3
 # Please modify the path of input directory
 CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --image_dir=<Input DIR>
 ```
@@ -59,7 +59,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --image_dir=<Input D
 
 2. Train
 
-```
+```python3
 # Please modify the path of input directory
 CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --image_dir=<Input DIR> --pre_trained=<Pretrained model of SyntheticBurst>
 ```
@@ -74,7 +74,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --image_dir=<Input D
   If you want to change the super-resolution scale, please change --scale.
   Not only intager scales, but also floating scales are possible.
   But the qualities of floating sclae such as x2.5 and x3.5 are not guaranteed.
-```
+```python3
 # Please modify the path of iamge directory for inputs and pre-trained models(weights).
 CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DIR> --scale=4, --weights=<Pretrained model of SyntheticBurst>
 ```
@@ -88,7 +88,7 @@ CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DI
   If you want to change the super-resolution scale, please change --scale.
   Not only intager scales, but also floating scales are possible.
   But the qualities of floating sclae such as x2.5 and x3.5 are not guaranteed.
-```
+```python3
 # Please modify the path of iamge directory for inputs and pre-trained models(weights).
 CUDA_VISIBLE_DEVICES=0 python BurstM_Track_2_evaluation.py --image_dir=<Input DIR> --scale=4, --weights=<Pretrained model of BurstSR>
 ``` 
