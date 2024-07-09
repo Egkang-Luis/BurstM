@@ -66,7 +66,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --image_dir=<Input D
 ## Test
 
 ### SyntheticBurst
-1. Download pre-trained models of SyntheticBurst [Download](https://drive.google.com/file/d/1ToKrtGUhUHm8yHnZvgVuUmVwXlN064as/view?usp=sharing).
+1. Download pre-trained models of SyntheticBurst [Download](https://drive.google.com/file/d/1XzBOV_F2un0nBWBdCCQCmDzvXlmee-cO/view?usp=sharing).
 
 2. Test
 
