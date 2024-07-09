@@ -37,7 +37,7 @@ def torch_seed(random_seed=13):
 parser = argparse.ArgumentParser(description='Synthetic burst super-resolution using BurstM')
 
 parser.add_argument('--log_dir', default="./Results/SyntheticBurst/tensorboard", type=str, help='Directory of logs(Tensorboard)')
-parser.add_argument('--image_dir', default="./Zurich-RAW-to-DSLR-Dataset", type=str, help='Directory of inputs')
+parser.add_argument('--input_dir', default="./Zurich-RAW-to-DSLR-Dataset", type=str, help='Directory of inputs')
 parser.add_argument('--model_dir', default="./Results/SyntheticBurst/saved_model", type=str, help='Directory of model')
 parser.add_argument('--result_dir', default="./Results/SyntheticBurst/result", type=str, help='Directory of results')
 parser.add_argument('--burst_size', default="14", type=int, help='Number of Burst short')

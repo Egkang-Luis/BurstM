@@ -22,6 +22,7 @@ from pwcnet.pwcnet import PWCNet
 import data_processing.camera_pipeline as rgb2raw
 from data_processing.camera_pipeline import *
 import time
+import tqdm
 ##################################################################################################################
 
 
@@ -82,7 +83,7 @@ class BurstSR_Test_Network():
         SSIM = []
         
         if args.scale == '4':
-            for i, data in enumerate(test_data_loader):
+            for i, data in tqdm.tqdm(enumerate(test_data_loader)):
                 burst, labels, meta_info_burst, meta_info_gt, downsample_factor, target_size, burst_name = data
                 
                 target_size[0] = int(burst.shape[-1]*float(args.scale))
@@ -115,7 +116,7 @@ class BurstSR_Test_Network():
                 SSIM_temp = self.aligned_ssim_fn(output, labels, burst).cpu().numpy()
                 SSIM.append(SSIM_temp)
                 
-                print('Evaluation Measures for Burst {:d} ::: PSNR is {:0.3f}, SSIM is {:0.3f} and LPIPS is {:0.3f} \n'.format(i, PSNR_temp, SSIM_temp, LPIPS_temp))
+                # print('Evaluation Measures for Burst {:d} ::: PSNR is {:0.3f}, SSIM is {:0.3f} and LPIPS is {:0.3f} \n'.format(i, PSNR_temp, SSIM_temp, LPIPS_temp))
                 
                 burst = burst.cpu()
                 output = output.cpu()
@@ -146,7 +147,7 @@ class BurstSR_Test_Network():
             print(average_eval_par)
             
         else:
-            for i, data in enumerate(test_data_loader):
+            for i, data in tqdm.tqdm(enumerate(test_data_loader)):
                 burst, labels, meta_info_burst, meta_info_gt, downsample_factor, target_size, burst_name = data
                 
                 target_size[0] = int(burst.shape[-1]*float(args.scale))
@@ -171,7 +172,7 @@ class BurstSR_Test_Network():
                     output = output
                     output = output.clamp(0.0, 1.0)
                 
-                print('Burst {:d} ::: Can not evaluation by PSNR, SSIM, LPIPS\n'.format(i))
+                # print('Burst {:d} ::: Can not evaluation by PSNR, SSIM, LPIPS\n'.format(i))
                 
                 burst = burst.cpu()
                 output = output.cpu()

@@ -50,7 +50,7 @@ conda activate BurstM
 
 ```python3
 # Please modify the path of input directory
-CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --image_dir=<Input DIR> --log_dir=<Log DIR> --model_dir=<Model save DIR> --result_dir=<tensorboard dir>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --input_dir=<Input DIR> --log_dir=<Log DIR> --model_dir=<Model save DIR> --result_dir=<tensorboard dir>
 ```
 
 ### BurstSR(Real-world data)
@@ -60,7 +60,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --image_dir=<Input D
 
 ```python3
 # Please modify the path of input directory
-CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --image_dir=<Input DIR> --pre_trained=<Pretrained model of SyntheticBurst> --log_dir=<Log DIR> --model_dir=<Model save DIR> --result_dir=<tensorboard dir>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --input_dir=<Input DIR> --pre_trained=<Pretrained model of SyntheticBurst> --log_dir=<Log DIR> --model_dir=<Model save DIR> --result_dir=<tensorboard dir>
 ```
 
 ## Test
@@ -75,7 +75,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --image_dir=<Input D
   But the qualities of floating sclae such as x2.5 and x3.5 are not guaranteed.
 ```python3
 # Please modify the path of iamge directory for inputs and pre-trained models(weights).
-CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DIR> --scale=4, --weights=<Pretrained model of SyntheticBurst> --result_dir=<Result DIR> --result_gt_dir=<GT Result DIR>
+CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --input_dir=<Input DIR> --scale=4 --weights=<Pretrained model of SyntheticBurst> --result_dir=<Result DIR> --result_gt_dir=<GT Result DIR>
 ```
 
 ### BurstSR(Real-world data)
@@ -88,7 +88,7 @@ CUDA_VISIBLE_DEVICES=0 python BurstM_Track_1_evaluation.py --image_dir=<Input DI
   But the qualities of floating sclae such as x2.5 and x3.5 are not guaranteed.
 ```python3
 # Please modify the path of iamge directory for inputs and pre-trained models(weights).
-CUDA_VISIBLE_DEVICES=0 python BurstM_Track_2_evaluation.py --image_dir=<Input DIR> --scale=4, --weights=<Pretrained model of BurstSR> --result_dir=<Result DIR> --result_gt_dir=<GT Result DIR>
+CUDA_VISIBLE_DEVICES=0 python BurstM_Track_2_evaluation.py --input_dir=<Input DIR> --scale=4 --weights=<Pretrained model of BurstSR> --result_dir=<Result DIR> --result_gt_dir=<GT Result DIR>
 ``` 
 
 ## Citations
