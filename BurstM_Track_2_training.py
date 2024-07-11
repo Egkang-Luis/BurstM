@@ -65,7 +65,7 @@ if not os.path.exists(args.model_dir):
 
 ######################################### Training #######################################################
 
-train_loader, test_loader = load_data(args.image_dir, args.burst_size)
+train_loader, test_loader = load_data(args.input_dir, args.burst_size)
 
 checkpoint_callback = ModelCheckpoint(
     monitor='val_psnr',

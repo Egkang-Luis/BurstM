@@ -51,7 +51,7 @@ conda activate BurstM
 
 ```python3
 # Please modify the path of input directory
-CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --input_dir=<Input DIR> --log_dir=<Log DIR> --model_dir=<Model save DIR> --result_dir=<tensorboard dir>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_training.py --input_dir=<Input DIR> --log_dir=<Log DIR> --model_dir=<Model save DIR> --result_dir=<tensorboard dir>
 ```
 
 ### BurstSR(Real-world data)
@@ -61,7 +61,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_1_train.py --input_dir=<Input D
 
 ```python3
 # Please modify the path of input directory
-CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_train.py --input_dir=<Input DIR> --pre_trained=<Pretrained model of SyntheticBurst> --log_dir=<Log DIR> --model_dir=<Model save DIR> --result_dir=<tensorboard dir>
+CUDA_VISIBLE_DEVICES=0,1,2,3 python BurstM_Track_2_training.py --input_dir=<Input DIR> --pre_trained=<Pretrained model of SyntheticBurst> --log_dir=<Log DIR> --model_dir=<Model save DIR> --result_dir=<tensorboard dir>
 ```
 
 ## Test
