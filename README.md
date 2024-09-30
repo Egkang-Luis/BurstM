@@ -4,11 +4,11 @@
 
 This repository contains the official implementation for BurstM introduced in the following paper:
 
-The paper link will be updated.
-<!-- [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2304.01194.pdf) -->
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/pdf/2409.15384)
 
 #### News
 - **July 01, 2024:** Paper accepted at ECCV 2024 :tada:
+- **Oct 30, 2024:** Paper link updated :tada:
 
 <hr />
 
