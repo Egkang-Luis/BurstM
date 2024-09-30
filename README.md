@@ -8,7 +8,7 @@ This repository contains the official implementation for BurstM introduced in th
 
 #### News
 - **July 01, 2024:** Paper accepted at ECCV 2024 :tada:
-- **Oct 30, 2024:** Paper link updated :tada:
+- **Sep 30, 2024:** Paper link updated :tada:
 
 <hr />
 
